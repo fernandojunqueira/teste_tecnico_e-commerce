@@ -1,4 +1,7 @@
-import mysql from "mysql"
+import mysql from "mysql2";
+
+
+// import mysql from "mysql"
 
 export const db = mysql.createConnection({
   host: "localhost",
@@ -6,3 +9,9 @@ export const db = mysql.createConnection({
   password: "123456",
   database: "db_market"
 })
+
+// export const startDatabase =  () => {
+//    db.connect(function (err) {
+//     console.log('database conectada', err)
+//   });
+// };
