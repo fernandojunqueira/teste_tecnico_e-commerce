@@ -10,8 +10,3 @@ export const db = mysql.createConnection({
   database: "db_market"
 })
 
-// export const startDatabase =  () => {
-//    db.connect(function (err) {
-//     console.log('database conectada', err)
-//   });
-// };
