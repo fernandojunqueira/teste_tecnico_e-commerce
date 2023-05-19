@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
-import { Products, getProfile } from "../../services/getProducts"
+import { Products, getProducts } from "../../services/getProducts"
 
 export const TableRead = () => {
     const [products, setProducts] = useState<Products[] | undefined>([])
 
     useEffect(() => {
         (async () => {
-         const data = await getProfile()
+         const data = await getProducts()
          setProducts(data)
         })()
     })

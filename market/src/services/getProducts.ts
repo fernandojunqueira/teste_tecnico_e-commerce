@@ -7,7 +7,7 @@ export interface Products{
     sales_price: string;
 }
 
-export async function getProfile(): Promise<Products[]> {
+export async function getProducts(): Promise<Products[]> {
 
     const {data} = await api.get<Products[]>(`/products`)
 
